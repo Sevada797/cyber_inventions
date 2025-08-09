@@ -13,3 +13,28 @@ The goal is to give learners a safe playground to:
 > Don’t try this on systems you don’t have permission to test.
 
 Stay curious, stay safe — and happy exploiting! 😈
+
+---
+
+## How to Run
+
+1. **Install PHP** (if you don’t have it yet):  
+   - **Linux** (Debian/Ubuntu):  
+     ```bash
+     sudo apt update && sudo apt install php
+     ```
+   - **Mac** (Homebrew):  
+     ```bash
+     brew install php
+     ```
+   - **Windows**:  
+     Download from [php.net](https://www.php.net/downloads) and add it to your PATH.
+
+2. **Start a local PHP server** in the project directory:
+   ```bash
+   php -S 127.0.0.1:8000 -t ./
+   ```
+3. **In browser**
+Go to http://127.0.0.1:8000
+
+Happy hacking! 🔥
