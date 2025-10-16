@@ -1,7 +1,7 @@
 ## Universal WAF BYPASS for DOM XSS
 I think such bypass should work on lot's of firewalls, here's the logical bypass I use :DD
 
-For example if reflection is inside `<script>..."REFLECTION"...</script>```
+For example if reflection is inside `<script>..."REFLECTION"...</script>`
 
 You can use this script below, after modifying it, to get the crafted with payload link.
 
