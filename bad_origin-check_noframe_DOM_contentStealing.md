@@ -14,7 +14,7 @@ Have these entries in /etc/hosts
 
 Now, lesser known fact is that you can have a window with `null` origin via CSP, and the page opened by it also inherits the `null` origin
 
-```mkdir demo_BCNPXSS  # bad check noframe partial xss```
+```mkdir demo_BCNPXSS && cd demo_BCNPXSS   # bad check noframe partial xss```
 
 Now let's create,
 
