@@ -51,9 +51,14 @@ README :3
 
 Now running the server, ```php -S 127.0.0.1:7798```
 
-visiting the POC page:  http://lhacker.com:7798/null.php
-
-Note origin check is being bypassed, but since sandbox is also inherited we can only partially exploit the XSS.
-
+## Notes a bit
+Note that origin check is being bypassed, but since sandbox is also inherited we can only partially exploit the XSS.
 Note: you can after just in http://lhacker.com:7798/null.php  -->  console, check this `origin` - should return null, and same if u do `open('http://lvictim.com:7798/vuln.php')` or any other site,
 then again in console check origin -> you shall see `null`
+
+visiting the POC page:  http://lhacker.com:7798/null.php
+
+## Possible Impact as for now  (I am trying to escalate)
+Read of sessioned HTML  (P2, CSRF Token, reflected cookie/storage values maybe etc...)
+
+P.S. Sadly iframing more in vuln.php with same origin - still doesn't allow to read data, otherwise same host different endps everything could be readable more impact for sure guaranteed.
